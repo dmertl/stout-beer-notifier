@@ -1,11 +1,14 @@
 import argparse
-import sys
 import os
 import json
 import logging
+import re
 import urllib2
+
 from lxml.html import fromstring
 from unidecode import unidecode
+
+import sys
 
 root_log = logging.getLogger()
 root_log.setLevel(logging.WARN)
@@ -80,8 +83,9 @@ def _parse_section(header_element, section_element, section_count):
     if name:
         name = name[0].text_content().strip()
         _log('Parsing section {0} "{1}".'.format(section_count, name))
-        section_obj = {
+        section = {
             'name': name,
+            'type': 'wine' if 'Wine' in name else 'beer',
             'beverages': []
         }
 
@@ -92,17 +96,17 @@ def _parse_section(header_element, section_element, section_count):
         for beverage_element in beverage_elements:
             beverage_count += 1
             try:
-                beverage = _parse_beverage(beverage_element, beverage_count, section_count)
+                beverage = _parse_beverage(beverage_element, section['type'] == 'wine', beverage_count, section_count)
                 _log('Parsed beverage {0} "{1}".'.format(beverage_count, beverage['name']))
-                section_obj['beverages'].append(beverage)
+                section['beverages'].append(beverage)
             except ParsingException as e:
                 _log(e.message, logging.WARN)
-        return section_obj
+        return section
     else:
         raise ParsingException('Unable to find "h2" in header {0}'.format(section_count))
 
 
-def _parse_beverage(beverage_element, beverage_count, section_count):
+def _parse_beverage(beverage_element, is_wine, beverage_count, section_count):
     """
     Parse a beverage element into an item.
 
@@ -122,11 +126,71 @@ def _parse_beverage(beverage_element, beverage_count, section_count):
         if type(name) is unicode:
             # Convert any fancy unicode characters to more common ascii equivalents
             name = unidecode(name)
-        return {
+        beverage = {
             'name': name
         }
+        try:
+            beverage['details'] = _parse_beverage_details(name, is_wine)
+        except ParsingException as e:
+            _log(e.message, logging.DEBUG)
+        return beverage
     else:
-        raise ParsingException('Unable to find "p.title" in section {0} item {1}.'.format(section_count, beverage_count))
+        raise ParsingException(
+            'Unable to find "p.title" in section {0} item {1}.'.format(section_count, beverage_count))
+
+
+def _parse_beverage_details(name, is_wine):
+    if is_wine:
+        # Campagnola / Pinot Grigio / 2010 / Veneto
+        regex = re.compile('^(.+)/(.+)/(.+)/(.+)$')
+        match = regex.match(name)
+        if match:
+            details = {
+                'winery': match.group(1).strip(),
+                'style': match.group(2).strip(),
+                'year': match.group(3).strip(),
+                'location': match.group(4).strip(),
+                'type': 'wine'
+            }
+            details['name'] = '{0} {1} {2}'.format(details['winery'], details['style'], details['year'])
+        else:
+            raise ParsingException('Unable to parse details out of wine name "{0}".'.format(name))
+    else:
+        # Green Monster - Deschutes / OR / Wild Ale / 22oz / 7.5%
+        regex = re.compile('^(.+)-(.+)/(.+)/(.+)/(.+)/(.+)$')
+        match = regex.match(name)
+        if match:
+            details = {
+                'name': match.group(1).strip(),
+                'brewery': match.group(2).strip(),
+                'location': match.group(3).strip(),
+                'style': match.group(4).strip(),
+                'size': match.group(5).strip(),
+                'alcohol_percentage': match.group(6).strip()
+            }
+        else:
+            # Avec Les Bons Voeux 2012 - Dupont / Belg / Xmas Saison / 9.5%
+            regex = re.compile('^(.+)-(.+)/(.+)/(.+)/(.+)$')
+            match = regex.match(name)
+            if match:
+                details = {
+                    'name': match.group(1).strip(),
+                    'brewery': match.group(2).strip(),
+                    'location': match.group(3).strip(),
+                    'style': match.group(4).strip(),
+                    'alcohol_percentage': match.group(5).strip()
+                }
+            else:
+                raise ParsingException('Unable to parse details out of beer name "{0}".'.format(name))
+        details['type'] = 'beer'
+        # Attempt to parse year out of name
+        year_re = re.compile('([0-9]{4})')
+        year_match = year_re.search(details['name'])
+        if year_match:
+            year = int(year_match.group(1))
+            if year and year > 1990 and year < 2020:
+                details['year'] = year
+    return details
 
 
 def _log(message, level=logging.INFO):
