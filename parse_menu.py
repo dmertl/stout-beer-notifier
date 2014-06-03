@@ -4,6 +4,7 @@ import json
 import logging
 import re
 import urllib2
+from datetime import datetime
 
 from lxml.html import fromstring
 from unidecode import unidecode
@@ -12,6 +13,8 @@ import sys
 
 root_log = logging.getLogger()
 root_log.setLevel(logging.WARN)
+
+#TODO: Use classes instead of dicts to make searching easier
 
 
 class Exception(Exception):
@@ -22,7 +25,16 @@ class ParsingException(Exception):
     pass
 
 
-def parse_menu(html):
+def parse_menu(html, location, date):
+    #TODO: parse location from menu
+    return {
+        'location': location,
+        'parsed': str(date),
+        'sections': parse_sections(html)
+    }
+
+
+def parse_sections(html):
     """
 
     :param html: Stout menu web page HTML
@@ -219,12 +231,12 @@ if __name__ == '__main__':
 
     if contents:
         # Parse menu
-        sections = parse_menu(contents)
+        menu = parse_menu(contents, 'Studio City', datetime.now())
 
         # Output parsed menu as JSON
         if args.pretty:
-            print json.dumps(sections, indent=2)
+            print json.dumps(menu, indent=2)
         else:
-            print json.dumps(sections)
+            print json.dumps(menu)
     else:
         print 'Unable to read menu from "{0}".'.format(filename)
