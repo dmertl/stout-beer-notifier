@@ -27,9 +27,9 @@ def diff(original, modified):
     original = json.loads(original)
     modified = json.loads(modified)
 
-    for section in modified:
+    for section in modified['sections']:
         o_section = None
-        for s in original:
+        for s in original['sections']:
             if s['name'] == section['name']:
                 o_section = s
         for beverage in section['beverages']:
@@ -40,9 +40,9 @@ def diff(original, modified):
             if not o_beverage:
                 _diff['added'].append({'section': section['name'], 'beverage': beverage['name']})
 
-    for section in original:
+    for section in original['sections']:
         m_section = None
-        for s in modified:
+        for s in modified['sections']:
             if s['name'] == section['name']:
                 m_section = s
         for beverage in section['beverages']:
