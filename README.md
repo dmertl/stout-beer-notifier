@@ -8,8 +8,8 @@ TODO
 
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
 - Parse location from menu (maybe not necessary)
+- Remove duplicates (they exist in the menu HTML)
 - View
-- Table view for debugging that is easy to scan columns of data
 - Set up on web server with cron for automation
 - Notifications
 - Unit tests
@@ -76,6 +76,10 @@ python menu_diff.py sample/old.json sample/new.json --pretty
 
 _Test menu parsing (diff should be empty)_
 diff <(python parse_menu.py sample/old.html --pretty) sample/old.json
+diff <(python parse_menu.py sample/2014-08-25.html --pretty) sample/2014-08-25.json
+
+_Review parsed menu in table for easy scanning_
+python table_view.py sample/2014-08-25.json > table.html
 
 Unit Tests
 ----------
