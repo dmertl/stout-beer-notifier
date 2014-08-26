@@ -56,19 +56,59 @@
     {
       "beverages": [
         {
-          "name": "Louis M. Martini -Cabernet Sauv/2009/Sonoma"
+          "name": "Louis M. Martini -Cabernet Sauv/2009/Sonoma", 
+          "details": {
+            "style": "Cabernet Sauv", 
+            "name": "Louis M. Martini Cabernet Sauv 2009", 
+            "location": "Sonoma", 
+            "winery": "Louis M. Martini", 
+            "year": "2009", 
+            "type": "wine"
+          }
         }, 
         {
-          "name": "Angeline -Pinot Noir/2010/Sonoma-Mendocino"
+          "name": "Angeline -Pinot Noir/2010/Sonoma-Mendocino", 
+          "details": {
+            "style": "Pinot Noir", 
+            "name": "Angeline Pinot Noir 2010", 
+            "location": "Sonoma-Mendocino", 
+            "winery": "Angeline", 
+            "year": "2010", 
+            "type": "wine"
+          }
         }, 
         {
-          "name": "Don Rodolfo -Malbec / 2010 / Mendoza"
+          "name": "Don Rodolfo -Malbec / 2010 / Mendoza", 
+          "details": {
+            "style": "Malbec", 
+            "name": "Don Rodolfo Malbec 2010", 
+            "location": "Mendoza", 
+            "winery": "Don Rodolfo", 
+            "year": "2010", 
+            "type": "wine"
+          }
         }, 
         {
-          "name": "Las Rocas -Garnacha-Merlot / 2008 / Spain"
+          "name": "Las Rocas -Garnacha-Merlot / 2008 / Spain", 
+          "details": {
+            "style": "Merlot", 
+            "name": "Las Rocas -Garnacha Merlot 2008", 
+            "location": "Spain", 
+            "winery": "Las Rocas -Garnacha", 
+            "year": "2008", 
+            "type": "wine"
+          }
         }, 
         {
-          "name": "Bridlewood -Syrah / 2009 / Central Coast"
+          "name": "Bridlewood -Syrah / 2009 / Central Coast", 
+          "details": {
+            "style": "Syrah", 
+            "name": "Bridlewood Syrah 2009", 
+            "location": "Central Coast", 
+            "winery": "Bridlewood", 
+            "year": "2009", 
+            "type": "wine"
+          }
         }
       ], 
       "type": "wine", 
@@ -189,16 +229,48 @@
     {
       "beverages": [
         {
-          "name": "Mont-Marcal Brut Reserva -Sparkling / 2008/ Spain"
+          "name": "Mont-Marcal Brut Reserva -Sparkling / 2008/ Spain", 
+          "details": {
+            "style": "Sparkling", 
+            "name": "Mont-Marcal Brut Reserva Sparkling 2008", 
+            "location": "Spain", 
+            "winery": "Mont-Marcal Brut Reserva", 
+            "year": "2008", 
+            "type": "wine"
+          }
         }, 
         {
-          "name": "Campagnola -Pinot Grigio / 2010 / Veneto"
+          "name": "Campagnola -Pinot Grigio / 2010 / Veneto", 
+          "details": {
+            "style": "Pinot Grigio", 
+            "name": "Campagnola Pinot Grigio 2010", 
+            "location": "Veneto", 
+            "winery": "Campagnola", 
+            "year": "2010", 
+            "type": "wine"
+          }
         }, 
         {
-          "name": "Shannon Ridge -Sauv Blanc / 2009 / Lake County"
+          "name": "Shannon Ridge -Sauv Blanc / 2009 / Lake County", 
+          "details": {
+            "style": "Sauv Blanc", 
+            "name": "Shannon Ridge Sauv Blanc 2009", 
+            "location": "Lake County", 
+            "winery": "Shannon Ridge", 
+            "year": "2009", 
+            "type": "wine"
+          }
         }, 
         {
-          "name": "Barnard Griffin- Chardonnay / 2009 / Columbia Valley"
+          "name": "Barnard Griffin- Chardonnay / 2009 / Columbia Valley", 
+          "details": {
+            "style": "Chardonnay", 
+            "name": "Barnard Griffin Chardonnay 2009", 
+            "location": "Columbia Valley", 
+            "winery": "Barnard Griffin", 
+            "year": "2009", 
+            "type": "wine"
+          }
         }
       ], 
       "type": "wine", 
@@ -563,5 +635,5 @@
     }
   ], 
   "location": "Studio City", 
-  "parsed": "2014-08-26 01:02:07.906660"
+  "parsed": "2014-08-26 01:05:36.772611"
 }

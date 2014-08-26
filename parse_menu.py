@@ -12,7 +12,7 @@ from unidecode import unidecode
 import sys
 
 root_log = logging.getLogger()
-root_log.setLevel(logging.ERROR)
+root_log.setLevel(logging.WARN)
 
 
 class Exception(Exception):
@@ -37,10 +37,13 @@ class BeverageParsingStrategy:
 
 class WineParsingStrategy(BeverageParsingStrategy):
     """
-    Campagnola / Pinot Grigio / 2010 / Veneto
+        Campagnola / Pinot Grigio / 2010 / Veneto
+          <winery> / <style> / <year> / <loc>
+        Don Rodolfo -Malbec / 2010 / Mendoza
+          <winery> -<style> / <year> / <loc>
     """
 
-    regex = re.compile('^(.+)/(.+)/(.+)/(.+)$')
+    regex = re.compile('^(.+)[/-](.+)/(.+)/(.+)$')
 
     def parse(self, name):
         match = self.regex.match(name)
@@ -295,7 +298,7 @@ def _parse_section(header_element, section_element, section_count):
                 _log('Parsed beverage {0} "{1}".'.format(beverage_count, beverage['name']))
                 section['beverages'].append(beverage)
             except ParsingException as e:
-                _log(e.message, logging.WARN)
+                _log(e.message, logging.DEBUG)
         return section
     else:
         raise ParsingException('Unable to find "h2" in header {0}'.format(section_count))
