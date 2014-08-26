@@ -365,13 +365,13 @@
         {
           "name": "Beavers Milk - Belching Beaver / CA / Milk Stout (Nitro) / 5.3% / $7", 
           "details": {
-            "nitro": true, 
+            "style": "Milk Stout (Nitro)", 
+            "name": "Beavers Milk", 
             "price": "$7", 
             "alcohol_percentage": "5.3%", 
             "location": "CA", 
             "type": "beer", 
-            "brewery": "Belching Beaver", 
-            "name": "Beavers Milk"
+            "brewery": "Belching Beaver"
           }
         }, 
         {
@@ -635,5 +635,5 @@
     }
   ], 
   "location": "Studio City", 
-  "parsed": "2014-08-26 01:05:36.772611"
+  "parsed": "2014-08-26 01:10:41.492851"
 }
