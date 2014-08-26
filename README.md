@@ -8,8 +8,9 @@ TODO
 
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
 - Parse location from menu (maybe not necessary)
-- Automation
 - View
+- Table view for debugging that is easy to scan columns of data
+- Set up on web server with cron for automation
 - Notifications
 - Unit tests
 - Configurable logging
