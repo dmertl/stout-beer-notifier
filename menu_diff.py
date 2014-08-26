@@ -19,9 +19,10 @@ class Exception(Exception):
 
 
 def diff(original, modified):
-    #TODO: create diff dictionary
-    #TODO: include timestamps
-    _diff = {}
+    _diff = {
+        'added': [],
+        'removed': []
+    }
 
     original = json.loads(original)
     modified = json.loads(modified)
@@ -37,7 +38,7 @@ def diff(original, modified):
                 if b['name'] == beverage['name']:
                     o_beverage = b
             if not o_beverage:
-                print "Added {0}: {1}".format(section['name'], beverage['name'])
+                _diff['added'].append({'section': section['name'], 'beverage': beverage['name']})
 
     for section in original:
         m_section = None
@@ -50,7 +51,7 @@ def diff(original, modified):
                 if b['name'] == beverage['name']:
                     m_beverage = b
             if not m_beverage:
-                print "Removed {0}: {1}".format(section['name'], beverage['name'])
+                _diff['removed'].append({'section': section['name'], 'beverage': beverage['name']})
 
     return _diff
 
@@ -84,10 +85,10 @@ if __name__ == '__main__':
         raise Exception('Unable to open file "{0}".'.format(args.modified))
 
     # Create diff of menus
-    _diff = diff(original_contents, modified_contents)
+    menu_diff = diff(original_contents, modified_contents)
 
     # Output diff as JSON
     if args.pretty:
-        print json.dumps(_diff, indent=2)
+        print json.dumps(menu_diff, indent=2)
     else:
-        print json.dumps(_diff)
+        print json.dumps(menu_diff)
