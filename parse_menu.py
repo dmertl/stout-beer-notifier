@@ -12,7 +12,7 @@ from unidecode import unidecode
 import sys
 
 root_log = logging.getLogger()
-root_log.setLevel(logging.WARN)
+root_log.setLevel(logging.ERROR)
 
 
 class Exception(Exception):
@@ -94,11 +94,21 @@ class SizePieceStrategy(BeveragePieceStrategy):
             raise PieceParsingException
 
 
+class NitroPieceStrategy(BeveragePieceStrategy):
+    def parse(self, piece):
+        if 'Nitro' in piece:
+            return {'nitro': True}
+        else:
+            raise PieceParsingException
+
+
 class BeerParser(BeverageParser):
     """
     Parse beer title into detailed information.
 
     Split beer on "/" into pieces. Identify data in pieces by formatting or position.
+        Old Speckled Hen - Green King / UK / Cream Ale / Nitro / 5.2%
+          <name> - <brewery> / <loc> / <style> / <nitro> / <alc>%
         RazzMaTazz - Julian / CA / Rasp Cider / 22oz / 6.9% / $12
           <name> - <brewery> / <loc> / <style> / <size>oz / <alc>% / $<cost>
         Saison Dupont Cuvee Dry Hop - Dupont / Belg / Saison / 6.5% / $10
@@ -111,7 +121,8 @@ class BeerParser(BeverageParser):
     strategies = [
         AlcoholPercentagePieceStrategy(),
         PricePieceStrategy(),
-        SizePieceStrategy()
+        SizePieceStrategy(),
+        NitroPieceStrategy()
     ]
 
     def parse(self, name):
@@ -307,17 +318,20 @@ def _parse_beverage(beverage_element, is_wine, beverage_count, section_count):
     name = beverage_element.xpath('.//p[@class="title"]')
     if name:
         name = name[0].text_content().strip()
-        if type(name) is unicode:
-            # Convert any fancy unicode characters to more common ascii equivalents
-            name = unidecode(name)
-        beverage = {
-            'name': name
-        }
-        try:
-            beverage['details'] = _parse_beverage_details(name, is_wine)
-        except ParsingException as e:
-            _log(e.message, logging.DEBUG)
-        return beverage
+        if name:
+            if type(name) is unicode:
+                # Convert any fancy unicode characters to more common ascii equivalents
+                name = unidecode(name)
+            beverage = {
+                'name': name
+            }
+            try:
+                beverage['details'] = _parse_beverage_details(name, is_wine)
+            except ParsingException as e:
+                _log(e.message, logging.DEBUG)
+            return beverage
+        else:
+            raise ParsingException('Empty beverage in section {0} item {1}'.format(section_count, beverage_count))
     else:
         raise ParsingException(
             'Unable to find "p.title" in section {0} item {1}.'.format(section_count, beverage_count))

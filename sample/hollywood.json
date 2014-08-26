@@ -1,0 +1,567 @@
+{
+  "sections": [
+    {
+      "beverages": [
+        {
+          "name": "Ingelmunster Pumpkin - Van Honsebrouck / Belg / 8.5% / $9", 
+          "details": {
+            "name": "Ingelmunster Pumpkin", 
+            "price": "$9", 
+            "alcohol_percentage": "8.5%", 
+            "location": "Belg", 
+            "type": "beer", 
+            "brewery": "Van Honsebrouck"
+          }
+        }, 
+        {
+          "name": "Ursa Minor - Craftsman / CA / Flanders Red / 6% / $8", 
+          "details": {
+            "style": "Flanders Red", 
+            "name": "Ursa Minor", 
+            "price": "$8", 
+            "alcohol_percentage": "6%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Craftsman"
+          }
+        }, 
+        {
+          "name": "Mesa Verde - Craftsman / CA / Bbl Aged Sour / 7% / $8", 
+          "details": {
+            "style": "Bbl Aged Sour", 
+            "name": "Mesa Verde", 
+            "price": "$8", 
+            "alcohol_percentage": "7%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Craftsman"
+          }
+        }, 
+        {
+          "name": "Opal - Firestone / CA / Saison / 7.5% / $8", 
+          "details": {
+            "style": "Saison", 
+            "name": "Opal", 
+            "price": "$8", 
+            "alcohol_percentage": "7.5%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Firestone"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Specialty Ales"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Louis M. Martini -Cabernet Sauv/2009/Sonoma"
+        }, 
+        {
+          "name": "Angeline -Pinot Noir/2010/Sonoma-Mendocino"
+        }, 
+        {
+          "name": "Don Rodolfo -Malbec / 2010 / Mendoza"
+        }, 
+        {
+          "name": "Las Rocas -Garnacha-Merlot / 2008 / Spain"
+        }, 
+        {
+          "name": "Bridlewood -Syrah / 2009 / Central Coast"
+        }
+      ], 
+      "type": "wine", 
+      "name": "Red Wine"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Angry Apple Ginger Cider - Boston Beer / Ma / Cider / 12oz / 5%", 
+          "details": {
+            "style": "Cider", 
+            "name": "Angry Apple Ginger Cider", 
+            "alcohol_percentage": "5%", 
+            "location": "Ma", 
+            "type": "beer", 
+            "brewery": "Boston Beer", 
+            "size": "12oz"
+          }
+        }, 
+        {
+          "name": "Barrel Noir - Almanac / CA / Belg-Am Stout Blend / 375ml / 10% / $18", 
+          "details": {
+            "style": "Belg-Am Stout Blend", 
+            "name": "Barrel Noir", 
+            "price": "$18", 
+            "alcohol_percentage": "10%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Almanac", 
+            "size": "375ml"
+          }
+        }, 
+        {
+          "name": "Farmer's Reserve Pluot - Almanac / CA / Wild Ale / 375ml / 7% / $18", 
+          "details": {
+            "style": "Wild Ale", 
+            "name": "Farmer's Reserve Pluot", 
+            "price": "$18", 
+            "alcohol_percentage": "7%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Almanac", 
+            "size": "375ml"
+          }
+        }, 
+        {
+          "name": "Oud Bruin - Verzet / Belgium / Oud Bruin / 375ml / 6% / $16", 
+          "details": {
+            "style": "Oud Bruin", 
+            "name": "Oud Bruin", 
+            "price": "$16", 
+            "alcohol_percentage": "6%", 
+            "location": "Belgium", 
+            "type": "beer", 
+            "brewery": "Verzet", 
+            "size": "375ml"
+          }
+        }, 
+        {
+          "name": "Elder Brett - Epic / Utah / Saison / 22oz / 8.8% / $14", 
+          "details": {
+            "style": "Saison", 
+            "name": "Elder Brett", 
+            "price": "$14", 
+            "alcohol_percentage": "8.8%", 
+            "location": "Utah", 
+            "type": "beer", 
+            "brewery": "Epic", 
+            "size": "22oz"
+          }
+        }, 
+        {
+          "name": "It's Alive White Wine - Mikkeller / Dk / Sour / 375ml / 8% / $20", 
+          "details": {
+            "style": "Sour", 
+            "name": "It's Alive White Wine", 
+            "price": "$20", 
+            "alcohol_percentage": "8%", 
+            "location": "Dk", 
+            "type": "beer", 
+            "brewery": "Mikkeller", 
+            "size": "375ml"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Specialty Bottled Beer"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Witte - Ommegang / NY / Witbier / 5.1% / $7", 
+          "details": {
+            "style": "Witbier", 
+            "name": "Witte", 
+            "price": "$7", 
+            "alcohol_percentage": "5.1%", 
+            "location": "NY", 
+            "type": "beer", 
+            "brewery": "Ommegang"
+          }
+        }, 
+        {
+          "name": "Weihenstephan / Germ / Hefeweizen / 5.4% / $7", 
+          "details": {
+            "style": "Hefeweizen", 
+            "name": "Weihenstephan", 
+            "price": "$7", 
+            "alcohol_percentage": "5.4%", 
+            "location": "Germ", 
+            "type": "beer"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Wheat Ales"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Mont-Marcal Brut Reserva -Sparkling / 2008/ Spain"
+        }, 
+        {
+          "name": "Campagnola -Pinot Grigio / 2010 / Veneto"
+        }, 
+        {
+          "name": "Shannon Ridge -Sauv Blanc / 2009 / Lake County"
+        }, 
+        {
+          "name": "Barnard Griffin- Chardonnay / 2009 / Columbia Valley"
+        }
+      ], 
+      "type": "wine", 
+      "name": "White Wine"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Summer Solstice - Anderson Valley / CA / Cream Ale / 5% / $7", 
+          "details": {
+            "style": "Cream Ale", 
+            "name": "Summer Solstice", 
+            "price": "$7", 
+            "alcohol_percentage": "5%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Anderson Valley"
+          }
+        }, 
+        {
+          "name": "Steelhead XPA - Mad River / CA / Extra Pale Ale / 5.7% / $7", 
+          "details": {
+            "style": "Extra Pale Ale", 
+            "name": "Steelhead XPA", 
+            "price": "$7", 
+            "alcohol_percentage": "5.7%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Mad River"
+          }
+        }, 
+        {
+          "name": "Old Speckled Hen - Green King / UK / Cream Ale / Nitro / 5.2%", 
+          "details": {
+            "style": "Cream Ale", 
+            "nitro": true, 
+            "alcohol_percentage": "5.2%", 
+            "location": "UK", 
+            "type": "beer", 
+            "brewery": "Green King", 
+            "name": "Old Speckled Hen"
+          }
+        }, 
+        {
+          "name": "Sweetgrass - Grand Teton / Idaho / Pale Ale / 6.5% / $7", 
+          "details": {
+            "style": "Pale Ale", 
+            "name": "Sweetgrass", 
+            "price": "$7", 
+            "alcohol_percentage": "6.5%", 
+            "location": "Idaho", 
+            "type": "beer", 
+            "brewery": "Grand Teton"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Pale Ales"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Bitburger Drive - Bitburger Brauerei / Germany / Non-Alcoholic Lager / 12oz / 0.5%", 
+          "details": {
+            "style": "Non-Alcoholic Lager", 
+            "name": "Bitburger Drive", 
+            "alcohol_percentage": "0.5%", 
+            "location": "Germany", 
+            "type": "beer", 
+            "brewery": "Bitburger Brauerei", 
+            "size": "12oz"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Non-Alcoholic Beer"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Bourbon Bbl Arrogant Bastard - Stone / CA / Str Ale / 7.5% / $8", 
+          "details": {
+            "style": "Str Ale", 
+            "name": "Bourbon Bbl Arrogant Bastard", 
+            "price": "$8", 
+            "alcohol_percentage": "7.5%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Stone"
+          }
+        }, 
+        {
+          "name": "Beavers Milk - Belching Beaver / CA / Milk Stout (Nitro) / 5.3% / $7", 
+          "details": {
+            "nitro": true, 
+            "price": "$7", 
+            "alcohol_percentage": "5.3%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Belching Beaver", 
+            "name": "Beavers Milk"
+          }
+        }, 
+        {
+          "name": "Old Rasputin - N.Coast / CA / Russ Imp. Stout / Nitro / 9%", 
+          "details": {
+            "style": "Russ Imp. Stout", 
+            "nitro": true, 
+            "alcohol_percentage": "9%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "N.Coast", 
+            "name": "Old Rasputin"
+          }
+        }, 
+        {
+          "name": "Old Stock - North Coast / CA / Old Ale / 11.5% / $9", 
+          "details": {
+            "style": "Old Ale", 
+            "name": "Old Stock", 
+            "price": "$9", 
+            "alcohol_percentage": "11.5%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "North Coast"
+          }
+        }, 
+        {
+          "name": "Boont Barl - Anderson Valley / CA / Bbl Aged Amber / 6% / $7", 
+          "details": {
+            "style": "Bbl Aged Amber", 
+            "name": "Boont Barl", 
+            "price": "$7", 
+            "alcohol_percentage": "6%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Anderson Valley"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Dark / Strong Ales"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Delirium Red - Huyghe / Belg / Belg Ale w/Cherries / 8% / $9", 
+          "details": {
+            "style": "Belg Ale with Cherries", 
+            "name": "Delirium Red", 
+            "price": "$9", 
+            "alcohol_percentage": "8%", 
+            "location": "Belg", 
+            "type": "beer", 
+            "brewery": "Huyghe"
+          }
+        }, 
+        {
+          "name": "Brainless on Raspberries - Epic / UT / Belg Strong / 9.7% / $8", 
+          "details": {
+            "style": "Belg Strong", 
+            "name": "Brainless on Raspberries", 
+            "price": "$8", 
+            "alcohol_percentage": "9.7%", 
+            "location": "UT", 
+            "type": "beer", 
+            "brewery": "Epic"
+          }
+        }, 
+        {
+          "name": "Reason Be Damned - Stone / CA / Abbey in Red Wine Bbl / 8.3% / $9", 
+          "details": {
+            "style": "Abbey in Red Wine Bbl", 
+            "name": "Reason Be Damned", 
+            "price": "$9", 
+            "alcohol_percentage": "8.3%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Stone"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Belgian Strong/Dark Ales"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Glutenator - Epic / Ut / Gluten-Free Ale / 22oz / 5%", 
+          "details": {
+            "style": "Gluten-Free Ale", 
+            "name": "Glutenator", 
+            "alcohol_percentage": "5%", 
+            "location": "Ut", 
+            "type": "beer", 
+            "brewery": "Epic", 
+            "size": "22oz"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Gluten Free Beer"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Hop Ottin' IPA - Anderson Valley / CA / IPA / 7% / $7", 
+          "details": {
+            "style": "IPA", 
+            "name": "Hop Ottin' IPA", 
+            "price": "$7", 
+            "alcohol_percentage": "7%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Anderson Valley"
+          }
+        }, 
+        {
+          "name": "Enjoy By... - Stone / CA / Imp IPA / 9.4% / $8", 
+          "details": {
+            "style": "Imp IPA", 
+            "name": "Enjoy By...", 
+            "price": "$8", 
+            "alcohol_percentage": "9.4%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Stone"
+          }
+        }, 
+        {
+          "name": "Titan IPA - Great Divide / CO / IPA / 7.1% / $8", 
+          "details": {
+            "style": "IPA", 
+            "name": "Titan IPA", 
+            "price": "$8", 
+            "alcohol_percentage": "7.1%", 
+            "location": "CO", 
+            "type": "beer", 
+            "brewery": "Great Divide"
+          }
+        }, 
+        {
+          "name": "Independence Day IPA - Ommegang / Belg IPA / 7.5% / $8", 
+          "details": {
+            "name": "Independence Day IPA", 
+            "price": "$8", 
+            "alcohol_percentage": "7.5%", 
+            "location": "Belg IPA", 
+            "type": "beer", 
+            "brewery": "Ommegang"
+          }
+        }, 
+        {
+          "name": "Centennial Hopulent - Epic / UT / Single Hop Imp IPA / 8.4% / $8", 
+          "details": {
+            "style": "Single Hop Imp IPA", 
+            "name": "Centennial Hopulent", 
+            "price": "$8", 
+            "alcohol_percentage": "8.4%", 
+            "location": "UT", 
+            "type": "beer", 
+            "brewery": "Epic"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Hoppy Ales"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "1903 - Craftsman / CA / Lager / 5.6% / $7", 
+          "details": {
+            "style": "Lager", 
+            "name": "1903", 
+            "price": "$7", 
+            "alcohol_percentage": "5.6%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Craftsman"
+          }
+        }, 
+        {
+          "name": "Pivo - Firestone / CA / Hoppy German Pils / 5.3% / $6", 
+          "details": {
+            "style": "Hoppy German Pils", 
+            "name": "Pivo", 
+            "price": "$6", 
+            "alcohol_percentage": "5.3%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Firestone"
+          }
+        }, 
+        {
+          "name": "Mama's Little Yellow Pils - Oskar Blues / CO / Czech Pils / 5.3% /", 
+          "details": {
+            "style": "Czech Pils", 
+            "name": "Mama's Little Yellow Pils", 
+            "alcohol_percentage": "5.3%", 
+            "location": "CO", 
+            "type": "beer", 
+            "brewery": "Oskar Blues"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Lagers"
+    }, 
+    {
+      "beverages": [
+        {
+          "name": "Allagash Curieux - Allagash / ME / Bourbon Bbl Aged Tripel / 11%", 
+          "details": {
+            "style": "Bourbon Bbl Aged Tripel", 
+            "name": "Allagash Curieux", 
+            "alcohol_percentage": "11%", 
+            "location": "ME", 
+            "type": "beer", 
+            "brewery": "Allagash"
+          }
+        }, 
+        {
+          "name": "Straffe Hendrik - De Halve Maan / Belg / Unfiltered Tripel / 9% / $9", 
+          "details": {
+            "style": "Unfiltered Tripel", 
+            "name": "Straffe Hendrik", 
+            "price": "$9", 
+            "alcohol_percentage": "9%", 
+            "location": "Belg", 
+            "type": "beer", 
+            "brewery": "De Halve Maan"
+          }
+        }, 
+        {
+          "name": "Deliria - Huyghe / Belgium / Belg Str Pale / 8.5% / $9", 
+          "details": {
+            "style": "Belg Str Pale", 
+            "name": "Deliria", 
+            "price": "$9", 
+            "alcohol_percentage": "8.5%", 
+            "location": "Belgium", 
+            "type": "beer", 
+            "brewery": "Huyghe"
+          }
+        }, 
+        {
+          "name": "La Chouffe - Brass D'Achouffe / Bel / Belg Golden Str / 8% / $8", 
+          "details": {
+            "style": "Belg Golden Str", 
+            "name": "La Chouffe", 
+            "price": "$8", 
+            "alcohol_percentage": "8%", 
+            "location": "Bel", 
+            "type": "beer", 
+            "brewery": "Brass D'Achouffe"
+          }
+        }
+      ], 
+      "type": "beer", 
+      "name": "Belgian Golden"
+    }
+  ], 
+  "location": "Studio City", 
+  "parsed": "2014-08-26 01:02:07.906660"
+}
