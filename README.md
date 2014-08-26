@@ -6,10 +6,12 @@ Get a notification when stout updates their beer list.
 TODO
 ====
 
+- Parse location from menu
 - Automation
 - View
 - Notifications
 - Unit tests
+- Configurable logging
 
 Future Features
 ---------------
@@ -45,7 +47,11 @@ Viewing Diff
 Notifications
 -------------
 
-Email?
+TBD
+
+Specify frequency, daily/weekly, etc.
+Specify location
+Specify categories of interest beer, on tap, wine, etc.
 
 Testing
 =======
