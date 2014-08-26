@@ -3,93 +3,51 @@
     {
       "beverages": [
         {
-          "name": "Avec Les Bons Voeux 2012 - Dupont / Belg / Xmas Saison / 9.5%", 
+          "name": "Saison Dupont Cuvee Dry Hop - Dupont / Belg / Saison / 6.5% / $10", 
           "details": {
-            "style": "Xmas Saison", 
-            "name": "Avec Les Bons Voeux 2012", 
-            "alcohol_percentage": "9.5%", 
+            "style": "Saison", 
+            "name": "Saison Dupont Cuvee Dry Hop", 
+            "price": "$10", 
+            "alcohol_percentage": "6.5%", 
             "location": "Belg", 
-            "year": 2012, 
             "type": "beer", 
             "brewery": "Dupont"
           }
         }, 
         {
-          "name": "Winter Solstice - Anderson Valley / CA / Winter Ale / 6.9%", 
+          "name": "Grand Cru - Rodenbach / Belgium / Flanders Red / 6% / $9", 
           "details": {
-            "style": "Winter Ale", 
-            "name": "Winter Solstice", 
-            "alcohol_percentage": "6.9%", 
-            "location": "CA", 
+            "style": "Flanders Red", 
+            "name": "Grand Cru", 
+            "price": "$9", 
+            "alcohol_percentage": "6%", 
+            "location": "Belgium", 
             "type": "beer", 
-            "brewery": "Anderson Valley"
+            "brewery": "Rodenbach"
           }
         }, 
         {
-          "name": "Gatlin Damnosus - Anderson Valley / CA / Sour Barleywine / 8.8%", 
+          "name": "Cuvee Brut - Liefmans / Belgium / Cherry Lambic / 6% / $10", 
           "details": {
-            "style": "Sour Barleywine", 
-            "name": "Gatlin Damnosus", 
-            "alcohol_percentage": "8.8%", 
-            "location": "CA", 
+            "style": "Cherry Lambic", 
+            "name": "Cuvee Brut", 
+            "price": "$10", 
+            "alcohol_percentage": "6%", 
+            "location": "Belgium", 
             "type": "beer", 
-            "brewery": "Anderson Valley"
+            "brewery": "Liefmans"
           }
         }, 
         {
-          "name": "Glimmerglass - Ommegang / NY / Saison / 5.4%", 
+          "name": "Session Brett - Allagash / ME / Wild Ale / 4.5% / $9", 
           "details": {
-            "style": "Saison", 
-            "name": "Glimmerglass", 
-            "alcohol_percentage": "5.4%", 
-            "location": "NY", 
+            "style": "Wild Ale", 
+            "name": "Session Brett", 
+            "price": "$9", 
+            "alcohol_percentage": "4.5%", 
+            "location": "ME", 
             "type": "beer", 
-            "brewery": "Ommegang"
-          }
-        }, 
-        {
-          "name": "Rosy Barl - Anderson Valley / CA / Sour Saison in Chard Bbls / 5.4%", 
-          "details": {
-            "style": "Sour Saison in Chard Bbls", 
-            "name": "Rosy Barl", 
-            "alcohol_percentage": "5.4%", 
-            "location": "CA", 
-            "type": "beer", 
-            "brewery": "Anderson Valley"
-          }
-        }, 
-        {
-          "name": "Pinchy Jeek - Anderson Valley / CA / Bourbon Pumpkin / 8.5%", 
-          "details": {
-            "style": "Bourbon Pumpkin", 
-            "name": "Pinchy Jeek", 
-            "alcohol_percentage": "8.5%", 
-            "location": "CA", 
-            "type": "beer", 
-            "brewery": "Anderson Valley"
-          }
-        }, 
-        {
-          "name": "Glimmerglass - Ommegang / NY / Saison / 5.4%", 
-          "details": {
-            "style": "Saison", 
-            "name": "Glimmerglass", 
-            "alcohol_percentage": "5.4%", 
-            "location": "NY", 
-            "type": "beer", 
-            "brewery": "Ommegang"
-          }
-        }, 
-        {
-          "name": "Coming Home 2012 - Grand Teton / Idaho / Barleywine / 10%", 
-          "details": {
-            "style": "Barleywine", 
-            "name": "Coming Home 2012", 
-            "alcohol_percentage": "10%", 
-            "location": "Idaho", 
-            "year": 2012, 
-            "type": "beer", 
-            "brewery": "Grand Teton"
+            "brewery": "Allagash"
           }
         }
       ], 
@@ -182,50 +140,54 @@
     {
       "beverages": [
         {
-          "name": "Angry Apple Ginger Cider - Boston Beer / Ma / Cider / 5%", 
+          "name": "St Louis Framboise - Belgium / Lambic-Fruit / 375ml / 4.5% / $15", 
           "details": {
-            "style": "Cider", 
-            "name": "Angry Apple Ginger Cider", 
-            "alcohol_percentage": "5%", 
-            "location": "Ma", 
+            "name": "St Louis Framboise", 
+            "price": "$15", 
+            "alcohol_percentage": "4.5%", 
+            "location": "Lambic-Fruit", 
             "type": "beer", 
-            "brewery": "Boston Beer"
+            "brewery": "Belgium", 
+            "size": "375ml"
           }
         }, 
         {
-          "name": "Green Monster - Deschutes / OR / Wild Ale / 22oz / 7.5%", 
+          "name": "Framboise De Amorosa - Lost Abbey / CA / Wild Ale / 375ml / 9% / $26", 
           "details": {
             "style": "Wild Ale", 
-            "name": "Green Monster", 
-            "alcohol_percentage": "7.5%", 
-            "location": "OR", 
+            "name": "Framboise De Amorosa", 
+            "price": "$26", 
+            "alcohol_percentage": "9%", 
+            "location": "CA", 
             "type": "beer", 
-            "brewery": "Deschutes", 
-            "size": "22oz"
+            "brewery": "Lost Abbey", 
+            "size": "375ml"
           }
         }, 
         {
-          "name": "La Parcela - Jolly Pumpkin / MI / Oaked Pumpkin / 500ml /7.2%", 
+          "name": "Farmer's Reserve Citrus - Almanac / CA / Sour w/Oranges / 375ml / 7% / $16", 
           "details": {
-            "style": "Oaked Pumpkin", 
-            "name": "La Parcela", 
-            "alcohol_percentage": "7.2%", 
-            "location": "MI", 
-            "type": "beer", 
-            "brewery": "Jolly Pumpkin", 
-            "size": "500ml"
-          }
-        }, 
-        {
-          "name": "Barrel Noir - Almanac / CA / Belg-Am Stout Blend / 375ml / 10%", 
-          "details": {
-            "style": "Belg-Am Stout Blend", 
-            "name": "Barrel Noir", 
-            "alcohol_percentage": "10%", 
+            "style": "Sour with Oranges", 
+            "name": "Farmer's Reserve Citrus", 
+            "price": "$16", 
+            "alcohol_percentage": "7%", 
             "location": "CA", 
             "type": "beer", 
             "brewery": "Almanac", 
             "size": "375ml"
+          }
+        }, 
+        {
+          "name": "Angry Apple Ginger Cider - Boston Beer / Ma / Cider / 12oz / 5% / $6", 
+          "details": {
+            "style": "Cider", 
+            "name": "Angry Apple Ginger Cider", 
+            "price": "$6", 
+            "alcohol_percentage": "5%", 
+            "location": "Ma", 
+            "type": "beer", 
+            "brewery": "Boston Beer", 
+            "size": "12oz"
           }
         }, 
         {
@@ -241,18 +203,6 @@
           }
         }, 
         {
-          "name": "George - Mikkeller / Dk / RIS Cognac BBL Aged/250ml/ 12.12%", 
-          "details": {
-            "style": "RIS Cognac BBL Aged", 
-            "name": "George", 
-            "alcohol_percentage": "12.12%", 
-            "location": "Dk", 
-            "type": "beer", 
-            "brewery": "Mikkeller", 
-            "size": "250ml"
-          }
-        }, 
-        {
           "name": "Barrel Noir - Almanac / CA / Belg-Am Stout Blend / 375ml / 10%", 
           "details": {
             "style": "Belg-Am Stout Blend", 
@@ -265,26 +215,15 @@
           }
         }, 
         {
-          "name": "Tsjeeses - De Struise / Belg / Belg Str Pale / 330ml / 10%", 
+          "name": "RazzMaTazz - Julian / CA / Rasp Cider / 22oz / 6.9% / $12", 
           "details": {
-            "style": "Belg Str Pale", 
-            "name": "Tsjeeses", 
-            "alcohol_percentage": "10%", 
-            "location": "Belg", 
+            "style": "Rasp Cider", 
+            "name": "RazzMaTazz", 
+            "price": "$12", 
+            "alcohol_percentage": "6.9%", 
+            "location": "CA", 
             "type": "beer", 
-            "brewery": "De Struise", 
-            "size": "330ml"
-          }
-        }, 
-        {
-          "name": "Trip 16 - New Belgium / CO / Farmhouse Rye Ale / 22oz / 6.2%", 
-          "details": {
-            "style": "Farmhouse Rye Ale", 
-            "name": "Trip 16", 
-            "alcohol_percentage": "6.2%", 
-            "location": "CO", 
-            "type": "beer", 
-            "brewery": "New Belgium", 
+            "brewery": "Julian", 
             "size": "22oz"
           }
         }, 
@@ -313,38 +252,41 @@
           }
         }, 
         {
-          "name": "Pannepot - De Struise / Belg / Quad / 330ml / 10%", 
+          "name": "El Dorado Showers - Noble / CA / DIPA / 22oz / 8.8% / $14", 
           "details": {
-            "style": "Quad", 
-            "name": "Pannepot", 
-            "alcohol_percentage": "10%", 
-            "location": "Belg", 
+            "style": "DIPA", 
+            "name": "El Dorado Showers", 
+            "price": "$14", 
+            "alcohol_percentage": "8.8%", 
+            "location": "CA", 
             "type": "beer", 
-            "brewery": "De Struise", 
-            "size": "330ml"
+            "brewery": "Noble", 
+            "size": "22oz"
           }
         }, 
         {
-          "name": "Deus - Brouw Bosteels / Belg / Biere Brut / 750ml / 11.5% /", 
+          "name": "Fluxus - Allagash / Maine / Belg Str Pale / 750ml / 7.7% / $25", 
           "details": {
-            "style": "Biere Brut", 
-            "name": "Deus", 
-            "alcohol_percentage": "11.5%", 
-            "location": "Belg", 
+            "style": "Belg Str Pale", 
+            "name": "Fluxus", 
+            "price": "$25", 
+            "alcohol_percentage": "7.7%", 
+            "location": "Maine", 
             "type": "beer", 
-            "brewery": "Brouw Bosteels", 
+            "brewery": "Allagash", 
             "size": "750ml"
           }
         }, 
         {
-          "name": "The Last Spike - Cigar City / FL / Common IPA / 22oz / 7.4%", 
+          "name": "Black Butte XXV - Deschutes / OR / Bbl Aged Porter / 22oz / 11.3% / $22", 
           "details": {
-            "style": "Common IPA", 
-            "name": "The Last Spike", 
-            "alcohol_percentage": "7.4%", 
-            "location": "FL", 
+            "style": "Bbl Aged Porter", 
+            "name": "Black Butte XXV", 
+            "price": "$22", 
+            "alcohol_percentage": "11.3%", 
+            "location": "OR", 
             "type": "beer", 
-            "brewery": "Cigar City", 
+            "brewery": "Deschutes", 
             "size": "22oz"
           }
         }, 
@@ -361,15 +303,16 @@
           }
         }, 
         {
-          "name": "Mash & Grind - The Bruery / CA / Barleywine w/Coffee / 750ml / 12.5%", 
+          "name": "Elder Brett - Epic / Utah / Saison / 22oz / 8.8% / $14", 
           "details": {
-            "style": "Barleywine with Coffee", 
-            "name": "Mash & Grind", 
-            "alcohol_percentage": "12.5%", 
-            "location": "CA", 
+            "style": "Saison", 
+            "name": "Elder Brett", 
+            "price": "$14", 
+            "alcohol_percentage": "8.8%", 
+            "location": "Utah", 
             "type": "beer", 
-            "brewery": "The Bruery", 
-            "size": "750ml"
+            "brewery": "Epic", 
+            "size": "22oz"
           }
         }, 
         {
@@ -383,6 +326,19 @@
             "brewery": "Jolly Pumpkin", 
             "size": "750ml"
           }
+        }, 
+        {
+          "name": "Intense Oude Kriek - Drie Fonteinen / Belg / Fruit Lambic / 375ml / 5% / $22", 
+          "details": {
+            "style": "Fruit Lambic", 
+            "name": "Intense Oude Kriek", 
+            "price": "$22", 
+            "alcohol_percentage": "5%", 
+            "location": "Belg", 
+            "type": "beer", 
+            "brewery": "Drie Fonteinen", 
+            "size": "375ml"
+          }
         }
       ], 
       "type": "beer", 
@@ -391,10 +347,11 @@
     {
       "beverages": [
         {
-          "name": "Old Rasputin - North Coast / CA / Russian Imperial Stout / 9%", 
+          "name": "Old Rasputin - North Coast / CA / Russ Imp Stout (nitro) / 9% / $7", 
           "details": {
-            "style": "Russian Imperial Stout", 
+            "style": "Russ Imp Stout (nitro)", 
             "name": "Old Rasputin", 
+            "price": "$7", 
             "alcohol_percentage": "9%", 
             "location": "CA", 
             "type": "beer", 
@@ -402,47 +359,51 @@
           }
         }, 
         {
-          "name": "Bbl Aged Hudson Porter - Golden Rd / CA / Porter / 10.3%", 
+          "name": "Old Chub - Oskar Blues / CO / Scotch Ale / 8% / $7", 
           "details": {
-            "style": "Porter", 
-            "name": "Bbl Aged Hudson Porter", 
-            "alcohol_percentage": "10.3%", 
-            "location": "CA", 
-            "type": "beer", 
-            "brewery": "Golden Rd"
-          }
-        }, 
-        {
-          "name": "Obsidian Stout - Deschutes / OR / Nitro Stout / 6.4%", 
-          "details": {
-            "style": "Nitro Stout", 
-            "name": "Obsidian Stout", 
-            "alcohol_percentage": "6.4%", 
-            "location": "OR", 
-            "type": "beer", 
-            "brewery": "Deschutes"
-          }
-        }, 
-        {
-          "name": "Solidarity - Eagle Rock / CA / Eng Dark Mild (nitro) / 3.8%", 
-          "details": {
-            "style": "Eng Dark Mild (nitro)", 
-            "name": "Solidarity", 
-            "alcohol_percentage": "3.8%", 
-            "location": "CA", 
-            "type": "beer", 
-            "brewery": "Eagle Rock"
-          }
-        }, 
-        {
-          "name": "Epically Strange - Epic-Strange / CO / Kriek Stout Blend / 6.6%", 
-          "details": {
-            "style": "Kriek Stout Blend", 
-            "name": "Epically Strange", 
-            "alcohol_percentage": "6.6%", 
+            "style": "Scotch Ale", 
+            "name": "Old Chub", 
+            "price": "$7", 
+            "alcohol_percentage": "8%", 
             "location": "CO", 
             "type": "beer", 
-            "brewery": "Epic-Strange"
+            "brewery": "Oskar Blues"
+          }
+        }, 
+        {
+          "name": "2nd Ann - Rough Draft / CA / Str Ale w/Cherries / 9.3% / $8", 
+          "details": {
+            "style": "Str Ale with Cherries", 
+            "name": "2nd Ann", 
+            "price": "$8", 
+            "alcohol_percentage": "9.3%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Rough Draft"
+          }
+        }, 
+        {
+          "name": "Big Bad Baptist - Epic / UT / Barrel-Aged Stout / 11% / $9", 
+          "details": {
+            "style": "Barrel-Aged Stout", 
+            "name": "Big Bad Baptist", 
+            "price": "$9", 
+            "alcohol_percentage": "11%", 
+            "location": "UT", 
+            "type": "beer", 
+            "brewery": "Epic"
+          }
+        }, 
+        {
+          "name": "Bourbon Bbl Arrogant Bastard - Stone / CA / Str Ale / 7.5% / $8", 
+          "details": {
+            "style": "Str Ale", 
+            "name": "Bourbon Bbl Arrogant Bastard", 
+            "price": "$8", 
+            "alcohol_percentage": "7.5%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Stone"
           }
         }
       ], 
@@ -513,32 +474,23 @@
     {
       "beverages": [
         {
-          "name": "Hefeweissbier - Weihenstephan / Germany / Hefeweizen / 5.4%", 
-          "details": {
-            "style": "Hefeweizen", 
-            "name": "Hefeweissbier", 
-            "alcohol_percentage": "5.4%", 
-            "location": "Germany", 
-            "type": "beer", 
-            "brewery": "Weihenstephan"
-          }
-        }, 
-        {
-          "name": "White Rascal - Avery / CO / Witbier / 5.5%", 
+          "name": "Heyday - Great Divide / CO / Witbier / 5.2% / $7", 
           "details": {
             "style": "Witbier", 
-            "name": "White Rascal", 
-            "alcohol_percentage": "5.5%", 
+            "name": "Heyday", 
+            "price": "$7", 
+            "alcohol_percentage": "5.2%", 
             "location": "CO", 
             "type": "beer", 
-            "brewery": "Avery"
+            "brewery": "Great Divide"
           }
         }, 
         {
-          "name": "Kellerweis - Sierra Nevada / CA / Bavarian Wheat / 4.8%", 
+          "name": "Kellerweis - Sierra Nevada / CA / Bavarian Wheat / 4.8% / $7", 
           "details": {
             "style": "Bavarian Wheat", 
             "name": "Kellerweis", 
+            "price": "$7", 
             "alcohol_percentage": "4.8%", 
             "location": "CA", 
             "type": "beer", 
@@ -552,36 +504,39 @@
     {
       "beverages": [
         {
-          "name": "Pale Ale - Saint Archer / CA / Pale Ale / 5.2%", 
+          "name": "Mosaic Pale - El Segundo / CA / Single Hop Pale / 5.5% / $7", 
           "details": {
-            "style": "Pale Ale", 
-            "name": "Pale Ale", 
-            "alcohol_percentage": "5.2%", 
+            "style": "Single Hop Pale", 
+            "name": "Mosaic Pale", 
+            "price": "$7", 
+            "alcohol_percentage": "5.5%", 
             "location": "CA", 
             "type": "beer", 
-            "brewery": "Saint Archer"
+            "brewery": "El Segundo"
           }
         }, 
         {
-          "name": "DBA - Firestone / CA / Bbl Aged Pale / 5.6%", 
+          "name": "Summer Solstice - Anderson Valley / CA / Cream Ale / 5% / $7", 
           "details": {
-            "style": "Bbl Aged Pale", 
-            "name": "DBA", 
-            "alcohol_percentage": "5.6%", 
+            "style": "Cream Ale", 
+            "name": "Summer Solstice", 
+            "price": "$7", 
+            "alcohol_percentage": "5%", 
             "location": "CA", 
             "type": "beer", 
-            "brewery": "Firestone"
+            "brewery": "Anderson Valley"
           }
         }, 
         {
-          "name": "Citra Pale Ale - Knee Deep / CA / Pale Ale / 6%", 
+          "name": "Breakaway - Noble / CA / APA / 5% / $7", 
           "details": {
-            "style": "Pale Ale", 
-            "name": "Citra Pale Ale", 
-            "alcohol_percentage": "6%", 
+            "style": "APA", 
+            "name": "Breakaway", 
+            "price": "$7", 
+            "alcohol_percentage": "5%", 
             "location": "CA", 
             "type": "beer", 
-            "brewery": "Knee Deep"
+            "brewery": "Noble"
           }
         }
       ], 
@@ -614,24 +569,15 @@
     {
       "beverages": [
         {
-          "name": "Collaboration Not Litigation - Avery-Russ River / Belg Str / 8.91%", 
+          "name": "Reason Be Damned - Stone / CA / Abbey in Red Wine Bbl / 8.3% / $9", 
           "details": {
-            "style": "Belg Str", 
-            "alcohol_percentage": "8.91%", 
+            "style": "Abbey in Red Wine Bbl", 
+            "name": "Reason Be Damned", 
+            "price": "$9", 
+            "alcohol_percentage": "8.3%", 
+            "location": "CA", 
             "type": "beer", 
-            "name": "Collaboration Not Litigation", 
-            "brewery": "Avery-Russ River"
-          }
-        }, 
-        {
-          "name": "Chocolate Indulgence - Ommegang / NY / Belg Stout / 7%", 
-          "details": {
-            "style": "Belg Stout", 
-            "name": "Chocolate Indulgence", 
-            "alcohol_percentage": "7%", 
-            "location": "NY", 
-            "type": "beer", 
-            "brewery": "Ommegang"
+            "brewery": "Stone"
           }
         }
       ], 
@@ -659,91 +605,87 @@
     {
       "beverages": [
         {
-          "name": "Hoparillo - Knee Deep / CA / Double IPA / 11.3%", 
+          "name": "Sock Knocker - Coronado / CA / Imp IPA / 8.5% / $8", 
           "details": {
-            "style": "Double IPA", 
-            "name": "Hoparillo", 
-            "alcohol_percentage": "11.3%", 
+            "style": "Imp IPA", 
+            "name": "Sock Knocker", 
+            "price": "$8", 
+            "alcohol_percentage": "8.5%", 
             "location": "CA", 
             "type": "beer", 
-            "brewery": "Knee Deep"
+            "brewery": "Coronado"
           }
         }, 
         {
-          "name": "Maharaja - Avery / CO / Imperial IPA / 10.3%", 
+          "name": "18th Ann - Coronado / CA / Imp IPA / 10% / $8", 
           "details": {
-            "style": "Imperial IPA", 
-            "name": "Maharaja", 
-            "alcohol_percentage": "10.3%", 
-            "location": "CO", 
+            "style": "Imp IPA", 
+            "name": "18th Ann", 
+            "price": "$8", 
+            "alcohol_percentage": "10%", 
+            "location": "CA", 
             "type": "beer", 
-            "brewery": "Avery"
+            "brewery": "Coronado"
           }
         }, 
         {
-          "name": "Surfin Monk's - Wolf Creek / CA / Tripel IPA / 9%", 
+          "name": "Hoppy Daze - Coronado / CA / Belgian IPA / 9% / $8", 
           "details": {
-            "style": "Tripel IPA", 
-            "name": "Surfin Monk's", 
+            "style": "Belgian IPA", 
+            "name": "Hoppy Daze", 
+            "price": "$8", 
             "alcohol_percentage": "9%", 
             "location": "CA", 
             "type": "beer", 
-            "brewery": "Wolf Creek"
+            "brewery": "Coronado"
           }
         }, 
         {
-          "name": "Saint Archer Red - Saint Archer / CA / Red Ale / 6.5%", 
+          "name": "IPA - Saint Archer / CA / IPA / 6.8% / $8", 
           "details": {
-            "style": "Red Ale", 
-            "name": "Saint Archer Red", 
-            "alcohol_percentage": "6.5%", 
+            "style": "IPA", 
+            "name": "IPA", 
+            "price": "$8", 
+            "alcohol_percentage": "6.8%", 
             "location": "CA", 
             "type": "beer", 
             "brewery": "Saint Archer"
           }
         }, 
         {
-          "name": "Grape Ape - Smog City / CA / IPA / 8.1%", 
+          "name": "Brainless IPA - Epic / UT / Belg IPA / 6.6% / $8", 
           "details": {
-            "style": "IPA", 
-            "name": "Grape Ape", 
-            "alcohol_percentage": "8.1%", 
-            "location": "CA", 
+            "style": "Belg IPA", 
+            "name": "Brainless IPA", 
+            "price": "$8", 
+            "alcohol_percentage": "6.6%", 
+            "location": "UT", 
             "type": "beer", 
-            "brewery": "Smog City"
+            "brewery": "Epic"
           }
         }, 
         {
-          "name": "Grapefruit Slam - Stochasticity / CA / Imp IPA / 8.2%", 
+          "name": "Troubadour Magma - De Musketiers / Belg / Belg IPA / 9% / $8", 
           "details": {
-            "style": "Imp IPA", 
-            "name": "Grapefruit Slam", 
-            "alcohol_percentage": "8.2%", 
-            "location": "CA", 
+            "style": "Belg IPA", 
+            "name": "Troubadour Magma", 
+            "price": "$8", 
+            "alcohol_percentage": "9%", 
+            "location": "Belg", 
             "type": "beer", 
-            "brewery": "Stochasticity"
+            "brewery": "De Musketiers"
           }
         }, 
         {
-          "name": "Go To IPA - Stone / CA / IPA / 4.5%", 
+          "name": "Aroma Coma - Drake's / CA / IPA / 6.7% / $8", 
           "details": {
             "style": "IPA", 
-            "name": "Go To IPA", 
-            "alcohol_percentage": "4.5%", 
+            "name": "Aroma Coma", 
+            "price": "$8", 
+            "alcohol_percentage": "6.7%", 
             "location": "CA", 
             "type": "beer", 
-            "brewery": "Stone"
-          }
-        }, 
-        {
-          "name": "Go To IPA - Stone / CA / IPA / 4.5%", 
-          "details": {
-            "style": "IPA", 
-            "name": "Go To IPA", 
-            "alcohol_percentage": "4.5%", 
-            "location": "CA", 
-            "type": "beer", 
-            "brewery": "Stone"
+            "brewery": "Drake's"
           }
         }
       ], 
@@ -753,35 +695,39 @@
     {
       "beverages": [
         {
-          "name": "Prima Pils - Victory / PA / American Pils / 5.3%", 
-          "details": {
-            "style": "American Pils", 
-            "name": "Prima Pils", 
-            "alcohol_percentage": "5.3%", 
-            "location": "PA", 
-            "type": "beer", 
-            "brewery": "Victory"
-          }
-        }, 
-        {
-          "name": "Weihenstephaner Original - Germ / Helles Lager / 5.1%", 
+          "name": "Blueski Lager - Epic / UT / Helles Lager / 5.3% / $6", 
           "details": {
             "style": "Helles Lager", 
-            "alcohol_percentage": "5.1%", 
+            "name": "Blueski Lager", 
+            "price": "$6", 
+            "alcohol_percentage": "5.3%", 
+            "location": "UT", 
             "type": "beer", 
-            "name": "Weihenstephaner Original", 
-            "brewery": "Germ"
+            "brewery": "Epic"
           }
         }, 
         {
-          "name": "Estaminet - Brouwerij Palm / Belg / Belg Pils / 5.2%", 
+          "name": "Mama's Little Yellow Pils - Oskar Blues / CO / Czech Pils / 5.3% / $6", 
           "details": {
-            "style": "Belg Pils", 
-            "name": "Estaminet", 
-            "alcohol_percentage": "5.2%", 
-            "location": "Belg", 
+            "style": "Czech Pils", 
+            "name": "Mama's Little Yellow Pils", 
+            "price": "$6", 
+            "alcohol_percentage": "5.3%", 
+            "location": "CO", 
             "type": "beer", 
-            "brewery": "Brouwerij Palm"
+            "brewery": "Oskar Blues"
+          }
+        }, 
+        {
+          "name": "Lagunitas Pils - Lagunitas / CA / Bohemian Pils / 5.3% / $6", 
+          "details": {
+            "style": "Bohemian Pils", 
+            "name": "Lagunitas Pils", 
+            "price": "$6", 
+            "alcohol_percentage": "5.3%", 
+            "location": "CA", 
+            "type": "beer", 
+            "brewery": "Lagunitas"
           }
         }
       ], 
@@ -791,58 +737,62 @@
     {
       "beverages": [
         {
-          "name": "La Chouffe - Brass D'Achouffe / Bel / Belg Golden Str / 8%", 
+          "name": "Brainless on Peaches - Epic / UT / Bbl Aged Golden / 10.7% / $8", 
           "details": {
-            "style": "Belg Golden Str", 
-            "name": "La Chouffe", 
-            "alcohol_percentage": "8%", 
-            "location": "Bel", 
+            "style": "Bbl Aged Golden", 
+            "name": "Brainless on Peaches", 
+            "price": "$8", 
+            "alcohol_percentage": "10.7%", 
+            "location": "UT", 
             "type": "beer", 
-            "brewery": "Brass D'Achouffe"
+            "brewery": "Epic"
           }
         }, 
         {
-          "name": "Allagash Curieux - Allagash / ME / Bourbon Bbl Aged Tripel / 11%", 
+          "name": "Deliria - Huyghe / Belgium / Belg Str Pale / 8.5% / $9", 
           "details": {
-            "style": "Bourbon Bbl Aged Tripel", 
-            "name": "Allagash Curieux", 
-            "alcohol_percentage": "11%", 
-            "location": "ME", 
+            "style": "Belg Str Pale", 
+            "name": "Deliria", 
+            "price": "$9", 
+            "alcohol_percentage": "8.5%", 
+            "location": "Belgium", 
             "type": "beer", 
-            "brewery": "Allagash"
+            "brewery": "Huyghe"
           }
         }, 
         {
-          "name": "Salvation - Avery / CO / Belg Strong Pale / 9%", 
+          "name": "Brainless on Raspberries - Epic / UT / Belg Strong / 9.7% / $8", 
           "details": {
-            "style": "Belg Strong Pale", 
-            "name": "Salvation", 
+            "style": "Belg Strong", 
+            "name": "Brainless on Raspberries", 
+            "price": "$8", 
+            "alcohol_percentage": "9.7%", 
+            "location": "UT", 
+            "type": "beer", 
+            "brewery": "Epic"
+          }
+        }, 
+        {
+          "name": "Straffe Hendrik - De Halve Maan / Belg / Unfiltered Tripel / 9% / $9", 
+          "details": {
+            "style": "Unfiltered Tripel", 
+            "name": "Straffe Hendrik", 
+            "price": "$9", 
             "alcohol_percentage": "9%", 
-            "location": "CO", 
-            "type": "beer", 
-            "brewery": "Avery"
-          }
-        }, 
-        {
-          "name": "Allagash Curieux - Allagash / ME / Bourbon Bbl Aged Tripel / 11%", 
-          "details": {
-            "style": "Bourbon Bbl Aged Tripel", 
-            "name": "Allagash Curieux", 
-            "alcohol_percentage": "11%", 
-            "location": "ME", 
-            "type": "beer", 
-            "brewery": "Allagash"
-          }
-        }, 
-        {
-          "name": "De Garre - Van Steenberge / Belg / Tripel / 10.5%", 
-          "details": {
-            "style": "Tripel", 
-            "name": "De Garre", 
-            "alcohol_percentage": "10.5%", 
             "location": "Belg", 
             "type": "beer", 
-            "brewery": "Van Steenberge"
+            "brewery": "De Halve Maan"
+          }
+        }, 
+        {
+          "name": "Allagash Curieux - Allagash / ME / Bourbon Bbl Aged Tripel / 11%", 
+          "details": {
+            "style": "Bourbon Bbl Aged Tripel", 
+            "name": "Allagash Curieux", 
+            "alcohol_percentage": "11%", 
+            "location": "ME", 
+            "type": "beer", 
+            "brewery": "Allagash"
           }
         }
       ], 
@@ -851,5 +801,5 @@
     }
   ], 
   "location": "Studio City", 
-  "parsed": "2014-08-25 23:47:53.213909"
+  "parsed": "2014-08-25 23:48:06.063736"
 }

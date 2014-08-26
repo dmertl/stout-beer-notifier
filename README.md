@@ -6,7 +6,8 @@ Get a notification when stout updates their beer list.
 TODO
 ====
 
-- Parse location from menu
+- Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
+- Parse location from menu (maybe not necessary)
 - Automation
 - View
 - Notifications
@@ -18,6 +19,12 @@ Future Features
 
 - Check for modified beverages in addition to added and removed. Same name, but different alcohol % or brewery, etc.
 - Some kind of user login to view differences since you last visited the site.
+
+Known Issues
+------------
+
+- Need a better way of identifying location vs. brewery vs. style. Currently have to use position which is not always consistent.
+- Some beers have location swapped with brewery "St Louis Framboise – Belgium / Lambic-Fruit / 375ml / 4.5% / $15"
 
 System
 ======
@@ -59,12 +66,15 @@ Testing
 Sample Testing
 --------------
 
-_Test menu parsing_
-parse_menu.py sample/old.html --pretty
-parse_menu.py sample/new.html --pretty
+_View menu parsing_
+python parse_menu.py sample/old.html --pretty
+python parse_menu.py sample/new.html --pretty
 
-_Test menu diff_
-menu_diff.py sample/old.json sample/new.json --pretty
+_View menu diff_
+python menu_diff.py sample/old.json sample/new.json --pretty
+
+_Test menu parsing (diff should be empty)_
+diff <(python parse_menu.py sample/old.html --pretty) sample/old.json
 
 Unit Tests
 ----------
