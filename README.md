@@ -6,11 +6,12 @@ Get a notification when stout updates their beer list.
 TODO
 ====
 
+- HTML page to input location, start date, end date and process diff
+- HTML View of diff between two menus
+- Set up on web server with cron for automation
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
 - Parse location from menu (maybe not necessary)
 - Remove duplicates (they exist in the menu HTML)
-- View
-- Set up on web server with cron for automation
 - Notifications
 - Unit tests
 - Configurable logging
@@ -26,7 +27,6 @@ Known Issues
 
 - Need a better way of identifying location vs. brewery vs. style. Currently have to use position which is not always consistent.
 - Some beers have location swapped with brewery "St Louis Framboise – Belgium / Lambic-Fruit / 375ml / 4.5% / $15"
-
 
 System
 ======
@@ -52,6 +52,8 @@ Viewing Diff
 - Retrieve cached menu files for location on start and end day (or nearest available).
 - Calculate diff of menu files.
 - Display diff.
+-- Display two lists, added and removed
+-- Display beer name only, hover for tooltip with full details
 
 Notifications
 -------------
