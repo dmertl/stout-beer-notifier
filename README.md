@@ -3,6 +3,20 @@ stout-beer-notifier
 
 Get a notification when stout updates their beer list.
 
+TODO
+====
+
+- Automation
+- View
+- Notifications
+- Unit tests
+
+Future Features
+---------------
+
+- Check for modified beverages in addition to added and removed. Same name, but different alcohol % or brewery, etc.
+- Some kind of user login to view differences since you last visited the site.
+
 System
 ======
 

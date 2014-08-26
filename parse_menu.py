@@ -14,8 +14,6 @@ import sys
 root_log = logging.getLogger()
 root_log.setLevel(logging.WARN)
 
-#TODO: Use classes instead of dicts to make searching easier
-
 
 class Exception(Exception):
     pass
