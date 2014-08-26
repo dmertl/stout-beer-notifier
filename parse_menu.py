@@ -99,7 +99,7 @@ class SizePieceStrategy(BeveragePieceStrategy):
 
 class NitroPieceStrategy(BeveragePieceStrategy):
     def parse(self, piece):
-        if 'Nitro' in piece:
+        if piece == 'Nitro':
             return {'nitro': True}
         else:
             raise PieceParsingException
