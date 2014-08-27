@@ -5,6 +5,7 @@ setup(name='StoutBeerNotifier',
       # packages=['licensingserver'],
       install_requires=[
           'lxml',
-          'unidecode'
+          'unidecode',
+          'jinja2'
       ],
 )

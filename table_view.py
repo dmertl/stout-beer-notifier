@@ -9,6 +9,7 @@ import parse_menu
 
 from lxml.html import fromstring
 from unidecode import unidecode
+from jinja2 import Template
 
 import sys
 
@@ -44,12 +45,13 @@ def menu_to_table(menu):
                 except KeyError:
                     row.append('')
             rows.append(row)
-    table = '<table>' + "\n"
-    table += '<tr><th>' + '</th><th>'.join(columns) + '</th></tr>' + "\n"
-    for row in rows:
-        table += '<tr><td>' + '</td><td>'.join(row) + '</td></tr>' + "\n"
-    table += '</table>' + "\n"
-    return table
+    return rows
+
+
+def table_to_html(table):
+    template_html = urllib2.urlopen('file:{0}'.format(urllib2.quote(os.path.abspath('table_view.html')))).read()
+    template = Template(template_html)
+    return template.render(headers=columns, rows=table)
 
 
 def _log(message, level=logging.INFO):
@@ -69,4 +71,4 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     menu_json = urllib2.urlopen('file:{0}'.format(urllib2.quote(os.path.abspath(args.file)))).read()
-    print menu_to_table(menu_json)
+    print table_to_html(menu_to_table(menu_json))
