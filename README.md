@@ -8,8 +8,6 @@ TODO
 
 - HTML page to input location, start date, end date and process diff
 - HTML View of diff between two menus
-- Separate into packages for processing menu and viewing on web
-- Proper jinja2 template organization
 - Set up on web server with cron for automation
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
 - Parse location from menu (maybe not necessary)
@@ -35,7 +33,7 @@ System
 
 Menu Parsing
 -------------
-parse_menu.py takes stoutburgersandbeers.com menu and parses it into JSON.
+parse_menu.py takes stoutburgersandbeers.com menu HTML and parses it into JSON.
 
 Menu Diff
 ---------

@@ -1,0 +1,58 @@
+{%  set columns = [
+    'name',
+    'brewery',
+    'style',
+    'location',
+    'alcohol_percentage',
+    'size',
+    'price',
+    'year',
+] %}
+<html>
+<head>
+    <title>Stout Beer Notifier - Table View</title>
+    <style type="text/css">
+        table td {
+            padding: 5px;
+        }
+        .table-section-divider > td {
+            font-weight: bold;
+            padding: 10px 10px 10px 0px;
+            border-bottom:solid 1px #333;
+        }
+    </style>
+</head>
+<body>
+<h1>Menu for {{ menu['location'] }} scraped on {{ menu['parsed'] }}</h1>
+<table>
+    <thead>
+        <tr>
+            {% for column in columns %}
+                <th>{{ column|replace("_", " ")|title }}</th>
+            {% endfor %}
+        </tr>
+    </thead>
+    {% for section in menu['sections'] %}
+        <tbody>
+            <tr class="table-section-divider">
+                <td colspan="{{ columns|length }}">{{ section['name'] }}</td>
+            </tr>
+            {% for beverage in section['beverages'] %}
+                <tr>
+                    {% if beverage['details'] %}
+                        {% for column in columns %}
+                            {% if column == 'brewery' and beverage['details']['type'] == 'wine' %}
+                                {% set column = 'winery' %}
+                            {% endif %}
+                            <td>{{ beverage['details'][column] }}</td>
+                        {% endfor %}
+                    {% else %}
+                        <td colspan="{{ columns|length }}">{{ beverage['name'] }}</td>
+                    {% endif %}
+                </tr>
+            {% endfor %}
+        </tbody>
+    {% endfor %}
+</table>
+</body>
+</html>

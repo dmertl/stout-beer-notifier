@@ -6,6 +6,6 @@ setup(name='StoutBeerNotifier',
       install_requires=[
           'lxml',
           'unidecode',
-          'jinja2'
+          'Flask'
       ],
 )

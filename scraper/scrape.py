@@ -1,16 +1,13 @@
-import argparse
 import os
 import json
 import logging
-import re
 import urllib2
 from datetime import datetime
-import parse_menu
-
-from lxml.html import fromstring
-from unidecode import unidecode
-
 import sys
+import re
+
+from scraper import parse_menu
+
 
 root_log = logging.getLogger()
 root_log.setLevel(logging.INFO)
@@ -65,6 +62,7 @@ def cache_menu(menu, location, time):
     :rtype: str
     """
     # Organize cache into directories by location/year/month
+    # TODO: update this to use new _build_cache_path method
     directory = os.path.join('menu_cache', time.strftime('%Y'), time.strftime('%m'))
     if not os.path.exists(directory):
         os.makedirs(directory)
@@ -75,6 +73,32 @@ def cache_menu(menu, location, time):
     with open(file_path, 'w') as fh:
         fh.write(json.dumps(menu))
     return file_path
+
+
+def get_cache(name=None, location=None, _datetime=None, year=None, month=None, day=None):
+    if name:
+        regex = re.compile('.*([0-9]{4})-([0-9]{2})-([0-9]{2})_(.*)')
+        matches = regex.match(name)
+        cache_path = _build_cache_path(matches.group(4), year=matches.group(1), month=matches.group(2),
+                                       day=matches.group(3))
+    else:
+        if _datetime:
+            cache_path = _build_cache_path(location=location, _datetime=_datetime)
+        else:
+            cache_path = _build_cache_path(location=location, year=year, month=month, day=day)
+
+    return json.load(open(cache_path))
+
+
+def _build_cache_path(location, year=None, month=None, day=None, _datetime=None):
+    cache_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'menu_cache')
+    if _datetime:
+        _dir = os.path.join(_datetime.strftime('%Y'), _datetime.strftime('%m'))
+        filename = 'menu_{0}_{1}.json'.format(_datetime.strftime('%Y-%m-%d'), location)
+    else:
+        _dir = os.path.join(year, month)
+        filename = 'menu_{0}-{1}-{2}_{3}.json'.format(year, month, day, location)
+    return os.path.join(cache_root, _dir, filename)
 
 
 def _log(message, level=logging.INFO):
