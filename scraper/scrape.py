@@ -61,40 +61,39 @@ def cache_menu(menu, location, time):
     :return: Path to the cached file.
     :rtype: str
     """
+    # Name files menu_YYYY-MM-DD_location.json
+    file_path = _build_cache_path(location['name'], time=time)
     # Organize cache into directories by location/year/month
-    # TODO: update this to use new _build_cache_path method
-    directory = os.path.join('menu_cache', time.strftime('%Y'), time.strftime('%m'))
+    directory = os.path.dirname(file_path)
     if not os.path.exists(directory):
         os.makedirs(directory)
-    # Name files menu_YYYY-MM-DD_location.json
-    location_path = location['name'].replace(' ', '_').lower()
-    filename = 'menu_{0}_{1}.json'.format(time.strftime('%Y-%m-%d'), location_path)
-    file_path = os.path.join(directory, filename)
+    # Write file
     with open(file_path, 'w') as fh:
         fh.write(json.dumps(menu))
     return file_path
 
 
-def get_cache(name=None, location=None, _datetime=None, year=None, month=None, day=None):
+def get_cache(name=None, location=None, time=None, year=None, month=None, day=None):
     if name:
         regex = re.compile('.*([0-9]{4})-([0-9]{2})-([0-9]{2})_(.*)')
         matches = regex.match(name)
         cache_path = _build_cache_path(matches.group(4), year=matches.group(1), month=matches.group(2),
                                        day=matches.group(3))
     else:
-        if _datetime:
-            cache_path = _build_cache_path(location=location, _datetime=_datetime)
+        if time:
+            cache_path = _build_cache_path(location=location, time=time)
         else:
             cache_path = _build_cache_path(location=location, year=year, month=month, day=day)
 
     return json.load(open(cache_path))
 
 
-def _build_cache_path(location, year=None, month=None, day=None, _datetime=None):
+def _build_cache_path(location, year=None, month=None, day=None, time=None):
+    location = location.replace(' ', '_').lower()
     cache_root = os.path.join(os.path.dirname(os.path.realpath(__file__)), 'menu_cache')
-    if _datetime:
-        _dir = os.path.join(_datetime.strftime('%Y'), _datetime.strftime('%m'))
-        filename = 'menu_{0}_{1}.json'.format(_datetime.strftime('%Y-%m-%d'), location)
+    if time:
+        _dir = os.path.join(time.strftime('%Y'), time.strftime('%m'))
+        filename = 'menu_{0}_{1}.json'.format(time.strftime('%Y-%m-%d'), location)
     else:
         _dir = os.path.join(year, month)
         filename = 'menu_{0}-{1}-{2}_{3}.json'.format(year, month, day, location)
