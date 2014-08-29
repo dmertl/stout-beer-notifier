@@ -24,9 +24,6 @@ def diff(original, modified):
         'removed': []
     }
 
-    original = json.loads(original)
-    modified = json.loads(modified)
-
     for section in modified['sections']:
         o_section = None
         for s in original['sections']:
@@ -77,15 +74,17 @@ if __name__ == '__main__':
     # Get file contents
     if os.path.exists(args.original):
         original_contents = urllib2.urlopen('file:{0}'.format(urllib2.quote(os.path.abspath(args.original)))).read()
+        original_json = json.loads(original_contents)
     else:
         raise Exception('Unable to open file "{0}".'.format(args.original))
     if os.path.exists(args.modified):
         modified_contents = urllib2.urlopen('file:{0}'.format(urllib2.quote(os.path.abspath(args.modified)))).read()
+        modified_json = json.loads(modified_contents)
     else:
         raise Exception('Unable to open file "{0}".'.format(args.modified))
 
     # Create diff of menus
-    menu_diff = diff(original_contents, modified_contents)
+    menu_diff = diff(original_json, modified_json)
 
     # Output diff as JSON
     if args.pretty:
