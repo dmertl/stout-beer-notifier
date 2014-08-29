@@ -75,20 +75,39 @@ def cache_menu(menu, location, time):
     return file_path
 
 
-def get_cache_near(location, time, lean_newer=True):
-    # TODO: use huersitic to bound on oldest and newest cache files
+def get_cache_near(location, time, lean='new'):
     cache_path = _build_cache_path(location, time=time)
     i = 0
     while not os.path.exists(cache_path):
         i += 1
-        if lean_newer:
+        if lean == 'new':
             time = time + timedelta(days=1)
         else:
             time = time - timedelta(days=1)
         cache_path = _build_cache_path(location, time=time)
         if i > 100:
-            raise Exception('Unable to find cache file near request date')
+            # Unable to find nearby cache, return oldest/newest
+            return get_cache_extreme(location, lean)
     return json.load(open(cache_path))
+
+
+def get_cache_extreme(location, extreme='new'):
+    location = _safe_location(location)
+    year = min(os.listdir(cache_root))
+    year_dir = os.path.join(cache_root, year)
+    month = min(os.listdir(year_dir))
+    month_dir = os.path.join(year_dir, month)
+    regex = re.compile('.*[0-9]{4}-[0-9]{2}-([0-9]{2})_' + location + '.json')
+    days = []
+    for menu_file in os.listdir(month_dir):
+        matches = regex.match(menu_file)
+        if matches:
+            days.append(matches.group(1))
+    if extreme == 'new':
+        day = max(days)
+    else:
+        day = min(days)
+    return get_cache(location=location, year=year, month=month, day=day)
 
 
 def get_cache(name=None, location=None, time=None, year=None, month=None, day=None):
@@ -107,7 +126,7 @@ def get_cache(name=None, location=None, time=None, year=None, month=None, day=No
 
 
 def _build_cache_path(location, year=None, month=None, day=None, time=None):
-    location = location.replace(' ', '_').lower()
+    location = _safe_location(location)
     if time:
         _dir = os.path.join(time.strftime('%Y'), time.strftime('%m'))
         filename = 'menu_{0}_{1}.json'.format(time.strftime('%Y-%m-%d'), location)
@@ -115,6 +134,10 @@ def _build_cache_path(location, year=None, month=None, day=None, time=None):
         _dir = os.path.join(year, month)
         filename = 'menu_{0}-{1}-{2}_{3}.json'.format(year, month, day, location)
     return os.path.join(cache_root, _dir, filename)
+
+
+def _safe_location(location):
+    return location.replace(' ', '_').lower()
 
 
 def _log(message, level=logging.INFO):
