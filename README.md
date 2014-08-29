@@ -6,9 +6,9 @@ Get a notification when stout updates their beer list.
 TODO
 ====
 
-- Standardize date formatting for scraped value in menu
 - Set up on web server with cron for automation
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
+- Style
 - Parse location from menu (maybe not necessary)
 - Remove duplicates (they exist in the menu HTML)
 - Notifications
