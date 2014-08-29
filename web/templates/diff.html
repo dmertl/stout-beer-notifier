@@ -21,6 +21,11 @@
     <button type="submit">Submit</button>
 </form>
 {% if diff %}
+    {% set diff_old_date = diff['old_date'].strftime('%Y-%m-%d') %}
+    {% set diff_new_date = diff['new_date'].strftime('%Y-%m-%d') %}
+    {% if diff_old_date != start or diff_new_date != end %}
+        Unable to find exact match, display changes from {{ diff_old_date }} to {{ diff_new_date }}.
+    {% endif %}
     <h2>Added</h2>
     <ul>
         {% for add in diff['added'] %}

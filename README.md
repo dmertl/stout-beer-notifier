@@ -6,8 +6,7 @@ Get a notification when stout updates their beer list.
 TODO
 ====
 
-- HTML page to input location, start date, end date and process diff
-- HTML View of diff between two menus
+- Standardize date formatting for scraped value in menu
 - Set up on web server with cron for automation
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
 - Parse location from menu (maybe not necessary)

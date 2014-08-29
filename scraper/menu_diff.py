@@ -4,6 +4,7 @@ import json
 import logging
 import re
 import urllib2
+from datetime import datetime
 
 from lxml.html import fromstring
 from unidecode import unidecode
@@ -20,6 +21,8 @@ class Exception(Exception):
 
 def diff(original, modified):
     _diff = {
+        'old_date': datetime.strptime(original['parsed'], '%Y-%m-%d %H:%M:%S.%f'),
+        'new_date': datetime.strptime(modified['parsed'], '%Y-%m-%d %H:%M:%S.%f'),
         'added': [],
         'removed': []
     }
