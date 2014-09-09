@@ -7,7 +7,7 @@ from scraper.menu_diff import diff
 
 @app.route('/')
 def home():
-    return 'Home page'
+    return render_template('home.html')
 
 
 @app.route('/menu/')

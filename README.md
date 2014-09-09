@@ -8,6 +8,7 @@ TODO
 
 - Set up on web server with cron for automation
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
+- Layout
 - Style
 - Parse location from menu (maybe not necessary)
 - Remove duplicates (they exist in the menu HTML)
