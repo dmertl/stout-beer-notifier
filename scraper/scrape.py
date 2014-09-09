@@ -6,7 +6,7 @@ from datetime import datetime, timedelta
 import sys
 import re
 
-from scraper import parse_menu
+import parse_menu
 
 
 root_log = logging.getLogger()
