@@ -6,7 +6,7 @@ Get a notification when stout updates their beer list.
 TODO
 ====
 
-- Set up on web server with cron for automation
+- Config
 - Sanity check beer piece parsing, check size/price/alcohol percentage are numbers
 - Layout
 - Style
