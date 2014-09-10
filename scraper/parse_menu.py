@@ -153,7 +153,7 @@ class BeerParser(BeverageParser):
             try:
                 details = dict(details.items() + self._parse_positional(unidentified, total_count).items())
             except ParsingException as e:
-                _log('{0} from name {1}'.format(e.message, name), logging.WARN)
+                _log('{0} from name {1}'.format(str(e), name), logging.WARN)
 
             try:
                 details = dict(details.items() + self._parse_year(details['name']).items())
@@ -251,7 +251,7 @@ def parse_sections(html):
             try:
                 parsed_sections.append(section)
             except ParsingException as e:
-                _log(e.message, logging.WARN)
+                _log(str(e), logging.WARN)
     else:
         _log('Unable to find "div#second-menu" when parsing menu.', logging.ERROR)
         raise ParsingException('Unable to find "div#second-menu" when parsing menu.')
@@ -294,7 +294,7 @@ def _parse_section(header_element, section_element, section_count):
                 _log('Parsed beverage {0} "{1}".'.format(beverage_count, beverage['name']))
                 section['beverages'].append(beverage)
             except ParsingException as e:
-                _log(e.message, logging.DEBUG)
+                _log(str(e), logging.DEBUG)
         return section
     else:
         raise ParsingException('Unable to find "h2" in header {0}'.format(section_count))
@@ -327,7 +327,7 @@ def _parse_beverage(beverage_element, is_wine, beverage_count, section_count):
             try:
                 beverage['details'] = _parse_beverage_details(name, is_wine)
             except ParsingException as e:
-                _log(e.message, logging.DEBUG)
+                _log(str(e), logging.DEBUG)
             return beverage
         else:
             raise ParsingException('Empty beverage in section {0} item {1}'.format(section_count, beverage_count))
