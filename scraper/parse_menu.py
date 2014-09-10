@@ -15,10 +15,6 @@ root_log = logging.getLogger()
 root_log.setLevel(logging.WARN)
 
 
-class Exception(Exception):
-    pass
-
-
 class ParsingException(Exception):
     pass
 

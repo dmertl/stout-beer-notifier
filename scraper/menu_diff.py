@@ -15,7 +15,7 @@ root_log = logging.getLogger()
 root_log.setLevel(logging.WARN)
 
 
-class Exception(Exception):
+class DiffException(Exception):
     pass
 
 
@@ -79,12 +79,12 @@ if __name__ == '__main__':
         original_contents = urllib2.urlopen('file:{0}'.format(urllib2.quote(os.path.abspath(args.original)))).read()
         original_json = json.loads(original_contents)
     else:
-        raise Exception('Unable to open file "{0}".'.format(args.original))
+        raise DiffException('Unable to open file "{0}".'.format(args.original))
     if os.path.exists(args.modified):
         modified_contents = urllib2.urlopen('file:{0}'.format(urllib2.quote(os.path.abspath(args.modified)))).read()
         modified_json = json.loads(modified_contents)
     else:
-        raise Exception('Unable to open file "{0}".'.format(args.modified))
+        raise DiffException('Unable to open file "{0}".'.format(args.modified))
 
     # Create diff of menus
     menu_diff = diff(original_json, modified_json)
